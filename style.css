@@ -1,0 +1,107 @@
+:root {
+    --color-primary: rgb(53, 57, 59);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "open sans";
+    font-size: 16px;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/images/fondo.webp);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    color: var(--color-primary);
+    text-align: center;
+    position: relative;
+}
+
+.header__text {
+    margin-top: 200px;
+}
+
+.header__title {
+    font-size: 8em;
+}
+
+.header__subtitle {
+    font-size: 4em;
+}
+
+.corte-inferior {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 15vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent var(--color-primary) transparent;
+}
+
+.aboutme {
+    background-color: var(--color-primary);
+    text-align: center;
+    padding: 4rem;
+    color: whitesmoke;
+}
+
+.aboutme__title {
+    margin-top: 0;
+    font-size: 4rem;
+}
+
+.aboutme__cite{
+    font-size: 2rem;
+}
+
+.aboutme__text {
+    font-size: 1.5rem;
+}
+
+.projects {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 300px;
+}
+
+.corte-superior {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-width: 15vh 100vw 0 0;
+    border-style: solid;
+    border-color: var(--color-primary) transparent transparent transparent;
+}
+
+.projects__title {
+    font-size: 4em;
+    margin-top: 0;
+    padding-top: 150px;
+    color: var(--color-primary);
+}
+
+.projects__gallery {
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+}
+
+.card__image {
+    width: 100%;
+    border-radius: 1em;
+}
+
+.footer {
+    background-color: var(--color-primary);
+}
