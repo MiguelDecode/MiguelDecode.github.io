@@ -1,5 +1,6 @@
 :root {
     --color-primary: rgb(53, 57, 59);
+    --color-text: whitesmoke;
 }
 
 * {
@@ -50,7 +51,7 @@ body {
     background-color: var(--color-primary);
     text-align: center;
     padding: 4rem;
-    color: whitesmoke;
+    color: var(--color-text);
 }
 
 .aboutme__title {
@@ -90,6 +91,7 @@ body {
 }
 
 .projects__gallery {
+    margin: 1.5rem;
     display: grid;
     gap: 1rem;
     grid-auto-rows: 22rem;
@@ -104,7 +106,12 @@ body {
 }
 
 .footer {
+    text-align: center;
     background-color: var(--color-primary);
     color: whitesmoke;
     padding: 1rem;
+}
+
+.footer__container {
+    font-size: 3rem;
 }
