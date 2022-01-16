@@ -10,6 +10,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    /* Parche provisional pero se debe buscar la causa */
+    overflow-x: hidden;
 }
 
 .header {
@@ -114,4 +116,9 @@ body {
 
 .footer__container {
     font-size: 3rem;
+}
+
+.github,
+.twitter {
+    color: whitesmoke;
 }
