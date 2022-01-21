@@ -14,8 +14,10 @@ body {
     overflow-x: hidden;
 }
 
+/* Header */
 .header {
     width: 100%;
+    min-width: 500px;
     height: 100vh;
     background-image: url(/images/fondo.webp);
     background-attachment: fixed;
@@ -25,10 +27,9 @@ body {
     color: var(--color-primary);
     text-align: center;
     position: relative;
-}
-
-.header__text {
-    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header__title {
@@ -49,6 +50,7 @@ body {
     border-color: transparent transparent var(--color-primary) transparent;
 }
 
+/* About me */
 .aboutme {
     background-color: var(--color-primary);
     text-align: center;
@@ -69,6 +71,7 @@ body {
     font-size: 1.5rem;
 }
 
+/* Mis proyectos */
 .projects {
     position: relative;
     text-align: center;
@@ -107,8 +110,9 @@ body {
     border-radius: 1rem;
 }
 
+/* Footer */
 .footer {
-    text-align: center;
+    text-align: right;
     background-color: var(--color-primary);
     color: whitesmoke;
     padding: 1rem;
