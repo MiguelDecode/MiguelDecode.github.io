@@ -1,76 +1,117 @@
 <!DOCTYPE html>
 <html lang="es">
+
   <head>
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize .css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
     <title>Miguel Decode | Desarollador web</title>
+
   </head>
+
   <body>
-    <header class="header">
-      <nav class="header-nav">
-        <ul class="header-nav__menu">
-          <li class="header-nav__item"><a href="#aboutme" class="header-nav__link">Acerca de mi</a></li>
-          <li class="header-nav__item"><a href="#knowledge" class="header-nav__link">Conocimientos</a></li>
-          <li class="header-nav__item"><a href="#projects" class="header-nav__link">Mis projectos</a></li>
-          <li class="header-nav__item"><a href="#footer" class="header-nav__link">Footer</a></li>
-        </ul>
-      </nav>
-      <div class="header__text">
-        <h1 class="header__title">Miguel Decode</h1>
-        <h3 class="header__subtitle">Desarollo Web</h3>
-      </div>
-      <div class="corte-inferior"></div>
-    </header>
-    <main class="main">
-      <section class="aboutme" id="aboutme">
-        <div class="aboutme__container">
-          <h2 class="aboutme__title">Acerca de mi</h2>
-          <blockquote class="aboutme__cite">"Viaje antes que destino"</blockquote>
-          <p class="aboutme__text">
-            Comencé en el mundo del desarrollo web como un interés nuevo y un pasatiempo, pero poco a poco me estoy dando cuenta de que cada vez me gusta más y siempre hay algo nuevo que aprender.
-          </p>
-          <p class="aboutme__text">
-            Mis primeras metas serán llegar a dominar HTML, CSS y JavaScript. Además a ratos libres trato de ir familiarizándome con Git y otras tecnologías sin olvidar mis aficiones como la lectura o el gusto por el mundo japones.
-          </p>  
+
+    <header class="header" id="header">
+      
+      <div class="up-cut"></div>
+
+      <nav class="nav">
+        <div class="logo">
+          <img src="./img/logo.svg" alt="logo">
         </div>
-      </section>
-      <section class="projects" id="projects">
-        <div class="corte-superior"></div>
-        <h2 class="projects__title">Mis proyectos</h2>
-        <article class="projects__gallery">
-          <picture class="gallery__card">
-            <img class="card__image" src="/images/routines-app.webp" alt="twitter">
-          </picture>
-          <picture class="gallery__card">
-            <img class="card__image" src="/images/theme-vscode.webp" alt="theme">
-          </picture>
-          <picture class="gallery__card">
-            <img class="card__image" src="/images/crash-bandicoot.webp" alt="crash bandicoot">
-          </picture>
-          <picture class="gallery__card">
-            <img class="card__image" src="/images/food-app.webp" alt="food">
-          </picture>
-          <picture class="gallery__card">
-            <img class="card__image" src="/images/twitch-app.webp" alt="twitch">
-          </picture>
-          <picture class="gallery__card">
-            <img class="card__image" src="/images/shop.webp" alt="shoop">
-          </picture>
-          <picture class="gallery__card">
-            <img class="card__image" src="/images/shop.webp" alt="shoop">
-          </picture>
-        </article>
-    </main>
-    <footer class="footer" id="footer">
-      <div class="footer__container">
-        <a class="github" href="https://github.com/MiguelDecode"><i class="fab fa-github"></i></a>
-        <a class="twitter" href="https://twitter.com/MiguelDecode"><i class="fab fa-twitter"></i></a>
+        <div class="menu">
+          <svg xmlns="http://www.w3.org/2000/svg" class="menu__logo" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </div>
+      </nav>
+
+      <div class="wrapper">
+        <div class="hero-image">
+          <h1 class="presentation">¡Hola! Soy Miguel Decode, soy <span class="accent-text">Junior Front End Developer</span> y me gusta <span class="accent-text">aprender cosas nuevas</span></h1>
+        </div>
       </div>
+
+      <div class="bottom-cut"></div>
+
+    </header>
+
+    <section class="about-me" id="about-me">
+
+      <div class="wrapper">
+        <h2 class="title">Acerca de mi</h2>
+        <p class="about-me__text">
+              Comencé en el mundo del desarrollo web como un interés nuevo y un pasatiempo, pero poco a poco me estoy dando cuenta de que cada vez me gusta más y siempre hay algo nuevo que aprender.
+        </p>
+        <p class="about-me__text">
+              Mis primeras metas serán llegar a dominar HTML, CSS y JavaScript. Además a ratos libres trato de ir familiarizándome con Git y otras tecnologías sin olvidar mis aficiones como la lectura o el gusto por el mundo japones.
+        </p>
+      </div>   
+
+    </section>
+
+    <section class="projects" id="projects">
+
+      <div class="up-cut"></div>
+
+      <h2 class="title">Mis proyectos</h2>
+
+      <div class="grid-container">
+
+        <article class="card">
+          <img class="card__image" src="./img/food-app.webp" alt="project">
+        </article>
+        
+        <article class="card">
+          <img class="card__image" src="./img/crash-bandicoot.webp" alt="project">
+        </article>
+
+        <article class="card">
+          <img class="card__image" src="./img/crash-bandicoot.webp" alt="project">
+        </article>
+
+        <article class="card">
+          <img class="card__image" src="./img/crash-bandicoot.webp" alt="project">
+        </article>
+
+        <article class="card">
+          <img class="card__image" src="./img/crash-bandicoot.webp" alt="project">
+        </article>
+
+        <article class="card">
+          <img class="card__image" src="./img/crash-bandicoot.webp" alt="project">
+        </article>
+          
+      </div>
+
+      <div class="bottom-cut"></div>
+
+    </section>
+
+    <section class="skills" id="skills">
+
+      <h2 class="title">Habilidades</h2>
+
+      <div class="wrapper">
+        <div class="grid-container">
+          <img src="./img/html-5.png" alt="Html icon">
+          <img src="./img/css-3.png" alt="Css icon">
+        </div>
+      </div>
+
+
+    </section>
+
+    <footer class="contact" id="contact">
+
     </footer>
-    <script src="https://kit.fontawesome.com/234f9bc49c.js" crossorigin="anonymous"></script>
+    
   </body>
 </html>
